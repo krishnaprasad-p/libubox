@@ -166,6 +166,7 @@ int blobmsg_parse_array(const struct blobmsg_policy *policy, int policy_len,
 int blobmsg_parse(const struct blobmsg_policy *policy, int policy_len,
                   struct blob_attr **tb, void *data, unsigned int len)
 {
+	printf("test");
 	const struct blobmsg_hdr *hdr;
 	struct blob_attr *attr;
 	uint8_t *pslen;
